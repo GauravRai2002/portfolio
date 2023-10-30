@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,15 @@
     <link rel="stylesheet" href="/styles/nav.css">
     <link rel="stylesheet" href="/styles/body.css">
     <link rel="stylesheet" href="/styles/hero.css">
+    <link rel="stylesheet" href="/styles/education.css">
+    <link rel="stylesheet" href="/styles/skills.css">
+    <link rel="stylesheet" href="/styles/projects.css">
+    <link rel="stylesheet" href="/styles/experience.css">
+    <link rel="stylesheet" href="/styles/connect.css">
+    <link rel="stylesheet" href="/styles/footer.css">
     <title>Gaurav's Portfolio</title>
 </head>
+
 <body>
 
     <!-- Navbar -->
@@ -19,17 +27,19 @@
 
         <ul class="nav-menu-list">
             <li class="nav-menu-list-items"> <a href="#"> Home </a></li>
-            <li class="nav-menu-list-items"> <a href="#"> Education </a></li>
-            <li class="nav-menu-list-items"> <a href="#"> Skills </a></li>
-            <li class="nav-menu-list-items"> <a href="#"> Projects </a></li>
-            <li class="nav-menu-list-items"> <a href="#"> Experience </a></li>
-            <li class="nav-menu-list-items"> <a href="#"> Contact </a></li>
+            <li class="nav-menu-list-items"> <a href="#education"> Education </a></li>
+            <li class="nav-menu-list-items"> <a href="#skills"> Skills </a></li>
+            <li class="nav-menu-list-items"> <a href="#projects"> Projects </a></li>
+            <li class="nav-menu-list-items"> <a href="#experience"> Experience </a></li>
+            <li class="nav-menu-list-items"> <a href="#contact"> Contact </a></li>
         </ul>
     </nav>
 
 
     <!-- Rest of the body  -->
     <div class="body">
+
+        <!-- Hero section  -->
 
         <section class="hero" id="hero">
             <div class="text-section-hero">
@@ -40,32 +50,359 @@
                     <span class="text-white">I am a </span><span class="text-green">web developer</span>
                 </div>
                 <div class="hero-section-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, et ex exercitationem facilis asperiores praesentium repellat animi dolores commodi.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, et ex exercitationem facilis
+                    asperiores praesentium repellat animi dolores commodi.
                 </div>
                 <div class="hero-section-actions">
-                    <div class="cv_download_button">
-                        <a href="#">Download CV</a>
-                    </div>
+                    <a class="link cv_download_button glow-25" href="#">
+                        Download CV
+                    </a>
 
                     <div class="social-media-hero">
-                        <a href="#"><img src="./assets/insta.svg" alt=""></a>
-                        <a href="#"><img src="./assets/linked.svg" alt=""></a>
-                        <a href="#"><img src="./assets/github.svg" alt=""></a>
+                        <a href="#"><img draggable="false" src="./assets/insta.svg" alt=""></a>
+                        <a href="#"><img draggable="false" src="./assets/linked.svg" alt=""></a>
+                        <a href="#"><img draggable="false" src="./assets/github.svg" alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="image-section-hero">
-                <img src="./assets/profile_photo.png" alt="">
+                <img draggable="false" src="./assets/profile_photo.png" alt="">
             </div>
         </section>
+        <a href="#education" class="go-down-btn"> <img src="./assets/arrow-down.svg" alt=""> </a>
+
+
+        <!-- Education Section  -->
+
+
+        <section class="education-wrapper" id="education">
+            <div class="education-heading heading">
+                Education
+            </div>
+            <div class="education desktop">
+                <div class="education-main-text-cover box-shadow">
+                    <div class="education-course">
+                        Bachelor Of Technology
+                    </div>
+                    <div class="education-stream">
+                        Information Technology
+                    </div>
+                    <div class="institution">
+                        Techno International New Town
+                    </div>
+                    <div class="grade">
+                        CGPA - 8.87
+                    </div>
+                </div>
+                <div class="timeline glow">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="education-completion-date">2020-2024</div>
+
+
+                <div class="education-completion-date text-right">2018-2020</div>
+                <div class="timeline glow">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="education-main-text-cover box-shadow">
+                    <div class="education-course">
+                        Higher Secondary
+                    </div>
+                    <div class="education-stream">
+                        Science
+                    </div>
+                    <div class="institution">
+                        South End School - ISC
+                    </div>
+                    <div class="grade">
+                        Percentage - 93.25
+                    </div>
+                </div>
+
+
+                <div class="education-main-text-cover last-education box-shadow">
+                    <div class="education-course">
+                        Secondary
+                    </div>
+                    <div class="education-stream">
+                        Science
+                    </div>
+                    <div class="institution">
+                        Narmada School - ICSE
+                    </div>
+                    <div class="grade">
+                        Percentage - 96.6
+                    </div>
+                </div>
+                <div class="timeline glow">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="education-completion-date last-education">2020-2024</div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- Skills section  -->
+        <section class="skills" id="skills">
+            <div class="heading">Skills</div>
+            <div class="skills-wrapper">
+                <div class="icon-wrapper glow sway">
+                    <img draggable="false" src="./assets/html.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway2">
+                    <img draggable="false" src="./assets/css.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway3">
+                    <img draggable="false" src="./assets/js.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway">
+                    <img draggable="false" src="./assets/java.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway2">
+                    <img draggable="false" src="./assets/react.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway3">
+                    <img draggable="false" src="./assets/node.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway">
+                    <img draggable="false" src="./assets/c.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway2">
+                    <img draggable="false" src="./assets/C++.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway3">
+                    <img draggable="false" src="./assets/mongo.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway">
+                    <img draggable="false" src="./assets/tw.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway2">
+                    <img draggable="false" src="./assets/exp.svg" alt="" class="icon">
+                </div>
+                <div class="icon-wrapper glow sway3">
+                    <img draggable="false" src="./assets/redux.svg" alt="" class="icon">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section  -->
+
+
+        <section class="projects" id="projects">
+
+            <div class="heading">Projects</div>
+            <div class="projects-wrapper">
+                <a href="https://sample-site-1-gaurav.netlify.app/" class="back-cover link">
+                    <div class="project-cover">
+                        <div class="project-thumbnail">
+                            <img src="./assets/rcs.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="project-heading text-green">
+                            Raw Canvas Studio
+                        </div>
+                        <div class="project-description">
+                            Designing Company Website made with HTML, CSS and JS
+                        </div>
+                    </div>
+                    <div class="green-background">
+                        
+                    </div>
+                </a>
+                <a href="https://sample-site-2-gaurav.netlify.app/" class="back-cover link">
+                    <div class="project-cover">
+                        <div class="project-thumbnail">
+                            <img src="./assets/9mo.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="project-heading text-green">
+                            9 Media Online
+                        </div>
+                        <div class="project-description">
+                            Advertisement Company Website made with React, CSS and JS
+                        </div>
+                    </div>
+                    <div class="green-background">
+                        
+                    </div>
+                </a>
+                <a href="https://vyanasports.com/" class="back-cover link">
+                    <div class="project-cover">
+                        <div class="project-thumbnail">
+                            <img src="./assets/vs.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="project-heading text-green">
+                            Vyana Sports
+                        </div>
+                        <div class="project-description">
+                            Sports Management Company Website made with React, CSS and JS with backend made with NodeJs and MongoDb
+                        </div>
+                    </div>
+                    <div class="green-background">
+                        
+                    </div>
+                </a>
+                <a href="https://gauravrai2002.github.io/Whackabox/" class="back-cover link">
+                    <div class="project-cover">
+                        <div class="project-thumbnail">
+                            <img src="./assets/whack.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="project-heading text-green">
+                            Whack A Box
+                        </div>
+                        <div class="project-description">
+                            Basic whack a mole game made with the help of HTML, CSS and JS. <span class="text-green">PS: My First Project</span> 
+                        </div>
+                    </div>
+                    <div class="green-background">
+                        
+                    </div>
+                </a>
+                <a href="https://expense-tracker-alpha-cyan.vercel.app/" class="back-cover link">
+                    <div class="project-cover">
+                        <div class="project-thumbnail">
+                            <img src="./assets/exSpend.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="project-heading text-green">
+                            ExSpend - Expense Tracker
+                        </div>
+                        <div class="project-description">
+                            Basic full stack application made with React, NodeJS and MongoDb to track the expenses
+                        </div>
+                    </div>
+                    <div class="green-background">
+                        
+                    </div>
+                </a>
+                <a href="https://contact-management-sepia.vercel.app/" class="back-cover link">
+                    <div class="project-cover">
+                        <div class="project-thumbnail">
+                            <img src="./assets/cm.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="project-heading text-green">
+                            Contact Management
+                        </div>
+                        <div class="project-description">
+                            A simple contact management website made using React, TypeScript and redux.
+                        </div>
+                    </div>
+                    <div class="green-background">
+                        
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Experience Section  -->
+
+        <section class="experience" id="experience">
+            <div class="heading">Experience</div>
+
+            <div class="experience-wrapper">
+                <div class="timeline glow">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="experience-cover">
+                    <div class="position">
+                        <span class="text-green">Software Developer Intern</span> - <span>Vyana Sports Management</span>
+                    </div>
+                    <div class="time">
+                        Aug 2023 - Current
+                    </div>
+                    <div class="job-resp">
+                        Job Responsibility -
+                        <ul class="resp-list">
+                            <li class="resp-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ea?</li>
+                            <li class="resp-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li class="resp-list-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus natus accusantium illo.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="timeline glow">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="experience-cover">
+                    <div class="position">
+                        <span class="text-green">Software Developer Intern</span> - <span>Make Me Global</span>
+                    </div>
+                    <div class="time">
+                        Aug 2022 - Jan 2023
+                    </div>
+                    <div class="job-resp">
+                        Job Responsibility -
+                        <ul class="resp-list">
+                            <li class="resp-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ea?</li>
+                            <li class="resp-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li class="resp-list-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus natus accusantium illo.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="timeline glow">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="experience-cover last-experience">
+                    <div class="position">
+                        <span class="text-green">Front-End Developer Intern</span> - <span>TBP Labs</span>
+                    </div>
+                    <div class="time">
+                        Dec 2021 - Aug 2022
+                    </div>
+                    <div class="job-resp">
+                        Job Responsibility -
+                        <ul class="resp-list">
+                            <li class="resp-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ea?</li>
+                            <li class="resp-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li class="resp-list-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus natus accusantium illo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section  -->
+
+        <section class="contact" id="contact">
+            <div class="heading">Connect With Me</div>
+            <div class="connect-wrapper">
+                <div class="connect-form box-shadow">
+                    <form>
+                        <div class="form-section">
+                            <label for="name">Name</label>
+                            <input id="name" class="input" type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-section">
+                            <label for="message">Name</label>
+                            <textarea name="" placeholder="Enter Your Message" id="message" class="input" cols="30" rows="5"></textarea>
+                        </div>
+                        <button class="btn glow-25"> Send Message </button>
+                    </form>
+                </div>
+                <img draggable="false" src="./assets/connect.png" alt="" class="connect-image">
+            </div>
+        </section>
+
+
 
 
     </div>
 
 
     <!-- Footer -->
-    <footer>
-
+    <footer class="footer">
+        Made By <span class="text-green" >Gaurav Rai</span>
     </footer>
 </body>
+
 </html>

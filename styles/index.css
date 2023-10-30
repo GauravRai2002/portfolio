@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Rock+Salt&display=swap');
 
 :root {
   --base-color: #021407;
   --secondary-color: #021D12;
   --primary-color: #07FC01;
   --accent-color: #56FE1D;
+  --accent-color-25: #55fe1d73;
 }
 
 ::selection {
@@ -18,17 +20,285 @@
   padding: 0;
   scroll-behavior: smooth;
   /* font-family: 'jolly-lodger'; */
+  /* font-family: 'Oswald', sans-serif;
+  font-family: 'Rock Salt', cursive; */
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   box-sizing: border-box;
+  scroll-padding-top: 80px;
+}
+
+.box-shadow{
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.5);
 }
 
 .text-glow {
-  text-shadow: 0px 0px 25px var(--accent-color);
+  text-shadow: 0px 0px 25px var(--accent-color), 0px 0px 65px var(--accent-color), 0px 0px 85px var(--accent-color);
+}
+
+.glow-25 {
+  box-shadow: 0px 0px 60px 10px var(--accent-color-25);
+  transition-duration: 0.25s;
+}
+
+.glow {
+  box-shadow: 0px 0px 10px 2px var(--accent-color),
+    0px 0px 30px 4px var(--accent-color),
+    0px 0px 60px 6px var(--accent-color);
+  transition-duration: 0.25s;
+}
+
+.glow-25:hover {
+  box-shadow: 0px 0px 10px 2px var(--accent-color),
+    0px 0px 30px 4px var(--accent-color),
+    0px 0px 60px 6px var(--accent-color);
+  background-color: #fff;
 }
 
 body {
   background-color: var(--base-color);
   max-width: 1450px;
   margin: 0px auto;
+}
+
+.heading {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Rock Salt', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 5rem auto;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  position: relative;
+  width: fit-content;
+  z-index: 2;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  filter: blur(40px);
+}
+
+.sway{
+  animation: sway 10s linear infinite;
+  /* animation-timing-function: ease; */
+}
+
+.sway2{
+  animation: sway2 10s linear infinite;
+  /* animation-timing-function: ease; */
+  animation-delay: 0.5s;
+}
+
+.sway3{
+  animation: sway3 10s linear infinite;
+  /* animation-timing-function: ease; */
+  animation-delay: 0.5s;
+}
+
+
+
+
+
+@-webkit-keyframes jump {
+
+  00% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes flicker-1 {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  41.99% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  45.01% {
+    opacity: 1;
+  }
+
+  47.99% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  49.01% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes sway{
+  0%,100%{
+    transform: translateX(0) translateY(0);
+  }
+  20%{
+    transform: translateX(-10px) translateY(-5px);
+  }
+  40%{
+    transform: translateX(-10px) translateY(0px);
+  }
+  60%{
+    transform: translateX(-2px) translateY(10px);
+  }
+  80%{
+    transform: translateX(10) translateY(5);
+  } 
+}
+
+
+@keyframes sway2{
+  0%,100%{
+    transform: translateX(0) translateY(0);
+  }
+  60%{
+    transform: translateX(-10px) translateY(-5px);
+  }
+  20%{
+    transform: translateX(-10px) translateY(0px);
+  }
+  40%{
+    transform: translateX(-2px) translateY(10px);
+  }
+  80%{
+    transform: translateX(10) translateY(5);
+  } 
+}
+
+
+@keyframes sway3{
+  0%,100%{
+    transform: translateX(0) translateY(0);
+  }
+  80%{
+    transform: translateX(-10px) translateY(-5px);
+  }
+  60%{
+    transform: translateX(-5px) translateY(0px);
+  }
+  40%{
+    transform: translateX(5px) translateY(10px);
+  }
+  20%{
+    transform: translateX(10) translateY(5);
+  } 
 }

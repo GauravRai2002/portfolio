@@ -1,0 +1,68 @@
+.education{
+    display: grid;
+    grid-template-columns: 1fr 15px 1fr;
+}
+
+.desktop{
+    display: grid;
+}
+
+.timeline{
+    position: relative;
+    width: 8px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+
+.timeline-dot{
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) ;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.education-main-text-cover{
+    margin: 0px 2.5rem 2.5rem 2.5rem;
+    background-color: var(--secondary-color);
+    padding: 2rem 5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.education-course{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+
+.education-stream,.institution,.grade{
+    font-size: 0.8rem;
+}
+
+
+.last-education{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+.education-completion-date{
+    margin: 0px 2.5rem 2.5rem 2.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.text-right{
+    text-align: right;
+}
