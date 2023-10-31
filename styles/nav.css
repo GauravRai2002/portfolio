@@ -1,6 +1,19 @@
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     padding: 1rem 6.75rem;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--base-color);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.navbar-mobile{
+    display: none;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
     align-items: center;
     justify-content: flex-start;
     background-color: var(--base-color);
@@ -18,6 +31,7 @@
 
 .nav-menu-list{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 2rem;
     margin: 0 auto;
@@ -30,6 +44,59 @@
     color: white;
 }
 
+
+
+
+.nav-logo-area-mobile{
+    font-size: 2rem;
+    font-family: 'jolly lodger';
+    text-shadow: 0px 0px 40px  var(--accent-color);
+    /* color: var(--accent-color); */
+}
+
+.nav-menu-list-mobile{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition-duration: 0.25s;
+    list-style: none;
+    gap: 2rem;
+    padding: 1rem 3rem;
+    width: 100%;
+    position: fixed;
+    background-color: var(--base-color);
+    z-index: 3;
+}
+
+
+.ham{
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    border-radius: 50%;
+    height: 40px ;
+    width: 40px;
+    background-color: var(--secondary-color);
+}
+
+.nav-menu-list-items-mobile a{
+    font-family: 'jolly lodger';
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: white;
+}
 a:focus, a:active{
     color: var(--primary-color);
+}
+
+@media only screen and (max-width:600px){
+    .navbar{
+        /* padding: 1rem 2rem; */
+        display: none;
+    }
+    .navbar-mobile{
+        display: flex;
+    }
 }

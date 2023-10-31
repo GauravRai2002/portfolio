@@ -56,5 +56,53 @@
 }
 
 
+@media only screen and (max-width:1300px) {
+    .project-heading{
+        font-size: 1.19rem;
+    }
+
+    .project-description{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media only screen and (max-width:1000px) {
+    .project-heading{
+        font-size: 1rem;
+    }
+
+    .project-description{
+        font-size: 0.7rem;
+    }
+
+    .projects-wrapper{
+        gap: 1.5rem;
+    }
+
+    .back-cover{
+        width: 45%;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    .project-heading{
+        font-size: 0.8rem;
+    }
+
+    .project-description{
+        font-size: 0.5rem;
+    }
+
+    .projects-wrapper{
+        gap: 1rem;
+    }
+
+    .back-cover{
+        width: 45%;
+    }
+}
+
 
 

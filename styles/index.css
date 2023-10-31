@@ -5,6 +5,7 @@
 :root {
   --base-color: #021407;
   --secondary-color: #021D12;
+  --secondary-color-25: #021d12c8;
   --primary-color: #07FC01;
   --accent-color: #56FE1D;
   --accent-color-25: #55fe1d73;
@@ -28,7 +29,7 @@
   scroll-padding-top: 80px;
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -86,18 +87,18 @@ body {
   filter: blur(40px);
 }
 
-.sway{
+.sway {
   animation: sway 10s linear infinite;
   /* animation-timing-function: ease; */
 }
 
-.sway2{
+.sway2 {
   animation: sway2 10s linear infinite;
   /* animation-timing-function: ease; */
   animation-delay: 0.5s;
 }
 
-.sway3{
+.sway3 {
   animation: sway3 10s linear infinite;
   /* animation-timing-function: ease; */
   animation-delay: 0.5s;
@@ -247,58 +248,98 @@ body {
 }
 
 
-@keyframes sway{
-  0%,100%{
+@keyframes sway {
+
+  0%,
+  100% {
     transform: translateX(0) translateY(0);
   }
-  20%{
+
+  20% {
     transform: translateX(-10px) translateY(-5px);
   }
-  40%{
+
+  40% {
     transform: translateX(-10px) translateY(0px);
   }
-  60%{
+
+  60% {
     transform: translateX(-2px) translateY(10px);
   }
-  80%{
+
+  80% {
     transform: translateX(10) translateY(5);
-  } 
+  }
 }
 
 
-@keyframes sway2{
-  0%,100%{
+@keyframes sway2 {
+
+  0%,
+  100% {
     transform: translateX(0) translateY(0);
   }
-  60%{
+
+  60% {
     transform: translateX(-10px) translateY(-5px);
   }
-  20%{
+
+  20% {
     transform: translateX(-10px) translateY(0px);
   }
-  40%{
+
+  40% {
     transform: translateX(-2px) translateY(10px);
   }
-  80%{
+
+  80% {
     transform: translateX(10) translateY(5);
-  } 
+  }
 }
 
 
-@keyframes sway3{
-  0%,100%{
+@keyframes sway3 {
+
+  0%,
+  100% {
     transform: translateX(0) translateY(0);
   }
-  80%{
+
+  80% {
     transform: translateX(-10px) translateY(-5px);
   }
-  60%{
+
+  60% {
     transform: translateX(-5px) translateY(0px);
   }
-  40%{
+
+  40% {
     transform: translateX(5px) translateY(10px);
   }
-  20%{
+
+  20% {
     transform: translateX(10) translateY(5);
-  } 
+  }
+}
+
+
+@media only screen and (max-width:1300px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+}
+
+
+@media only screen and (max-width:600px) {
+  .heading {
+    font-size: 1.25rem;
+    margin: 3rem auto;
+  }
+
+  .glow {
+    box-shadow: 0px 0px 10px 0px var(--accent-color),
+      0px 0px 25px 0px var(--accent-color),
+      0px 0px 50px 6px var(--accent-color);
+    transition-duration: 0.25s;
+  }
 }

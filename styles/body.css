@@ -3,3 +3,21 @@
     background-color: var(--base-color);
     
 }
+
+@media only screen and (max-width:1300px){
+    .body{
+        padding: 1rem 7rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .body{
+        padding: 1rem 3rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .body{
+        padding: 1rem 1.5rem;
+    }
+}
